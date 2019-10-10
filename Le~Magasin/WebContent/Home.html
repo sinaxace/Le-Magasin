@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+	Name: Sina Lyon
+ -->
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/style.css">
+
+<title>Le~Magasin</title>
+</head>
+<body>
+	<header>
+		<h1>Le~Magasin</h1>
+		<h2>Men's Fashion & Accessory Wear</h2>
+	</header>
+	<nav>
+		<button id=previous>&lt;- Previous</button>
+		<button id=next>Next -&gt;</button>
+	</nav>
+	<main>
+	<form action="Cart" method="post">
+		<table>
+			<!--European clothing section-->
+			<tr class=europe>
+				<td class=diviser><img src="img/british_navy.jpg"
+					alt="British Navy Suit"></td>
+				<td class=diviser>
+					<figcaption>British Navy Blue Suit - Checkered</figcaption>
+					<p class=price>
+						Price: <span>$79.99</span>
+					</p> <label for="cart">Buy:</label> <input id=price1 type="checkbox"
+					name="cart" value=79.99>
+				</td>
+			</tr>
+			<tr class=europe>
+				<td><img src="img/french_linen.jpg" alt="French Linen Blazer">
+				</td>
+				<td>
+					<figcaption>French Linen Blazer - Pink</figcaption>
+					<p class=price>
+						Price: <span>$101.25</span>
+					</p> <label for="cart">Buy:</label> <input id=price2 type="checkbox"
+					name="cart" value=101.25>
+				</td>
+			</tr>
+
+			<!-- The Scottish Skirts Section-->
+			<tr class=scott>
+				<td class=diviser><img src="img/true_scot_skirt.jpg"
+					alt="True Scottish Skirt Green"></td>
+				<td class=diviser>
+					<figcaption>True Scottish Skirt - Green</figcaption>
+					<p class=price>
+						Price: <span>$40.45</span>
+					</p> <label for="cart">Buy:</label> <input id=price3 type="checkbox"
+					name="cart" value=40.45>
+				</td>
+			</tr>
+			<tr class=scott>
+				<td><img src="img/true_scot_skirt_red.jpg"
+					alt="True Scottish Skirt Red"></td>
+				<td>
+					<figcaption>True Scottish Skirt - Red</figcaption>
+					<p class=price>
+						Price: <span>$35.45</span>
+					</p> <label for="cart">Buy:</label> <input id=price4 type="checkbox"
+					name="cart" value=35.45>
+				</td>
+			</tr>
+
+			<!-- The Western Style Section-->
+			<tr class=cowboy>
+				<td class=diviser><img src="img/suede_leather_western.jpg"
+					alt="Suede Cowboy Torso Western"></td>
+				<td class=diviser>
+					<figcaption>Suede Cowboy Torso - Western</figcaption>
+					<p class=price>
+						Price: <span>$29.99</span>
+					</p> <label for="cart">Buy:</label> <input id=price5 type="checkbox"
+					name="cart" value=29.99>
+				</td>
+			</tr>
+			<tr class=cowboy>
+				<td><img src="img/prospector_hat.jpg"
+					alt="Prospector's Hat Black"></td>
+				<td>
+					<figcaption>Prospector's Hat - Black</figcaption>
+					<p class=price>
+						Price: <span>$15.45</span>
+					</p> <label for="cart">Buy:</label> <input id=price6 type="checkbox"
+					name="cart" value=15.45>
+				</td>
+			</tr>
+
+			<!-- The Slavic Russian Section-->
+			<tr class=russian>
+				<td class=diviser><img src="img/russian_winter_fur_coat.jpg"
+					alt="Russian Winter Fur Coat"></td>
+				<td class=diviser>
+					<figcaption>Russian Winter Coat - Brown Fur</figcaption>
+					<p class=price>
+						Price: <span>$92.69</span>
+					</p> <label for="cart">Buy:</label> <input id=price7 type="checkbox"
+					name="cart" value=92.69>
+				</td>
+			</tr>
+			<tr class=russian>
+				<td><img src="img/east_slavic.jpg" alt="East Slavic Blue Suit">
+				</td>
+				<td>
+					<figcaption>East Slavic Business Suit - Blue</figcaption>
+					<p class=price>
+						Price: <span>$100.02</span>
+					</p> <label for="cart">Buy:</label> <input id=price8 type="checkbox"
+					name="cart" value=100.02>
+				</td>
+			</tr>
+
+			<!-- The Latin Style Section-->
+			<tr class=latin>
+				<td class=diviser><img src="img/latino_dance.jpg"
+					alt="Latino Ballroom Dance Suit Black"></td>
+				<td class=diviser>
+					<figcaption>Latino Ballroom Dance Suit - Black</figcaption>
+					<p class=price>
+						Price: <span>$77.79</span>
+					</p> <label for="cart">Buy:</label> <input id=price9 type="checkbox"
+					name="cart" value=77.79>
+				</td>
+			</tr>
+			<tr class=latin>
+				<td><img src="img/vacation_torso.jpg" alt="Mexican Vacation">
+				</td>
+				<td>
+					<figcaption>Mexican Vacation Torso - Light Blue</figcaption>
+					<p class=price>
+						Price: <span>$19.59</span>
+					</p> <label for="cart">Buy:</label> <input id=price10 type="checkbox"
+					name="cart" value=19.59>
+				</td>
+			</tr>
+		</table>
+		<section id=cart>
+			<img src="img/ecomm.png" alt="Shopping Cart">
+			<figcaption>
+				Total: <span id=count>0</span>
+			</figcaption>
+			<input type=submit value=Checkout! />
+		</section>
+	</form>
+	</main>
+	<footer>
+		<p>
+			<em>Powered by jQuery and Java EE</em>
+		</p>
+	</footer>
+
+	<!-- Adding in javascript files for using jQuery's functions.-->
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
